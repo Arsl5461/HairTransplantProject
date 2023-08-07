@@ -19,6 +19,7 @@ import female1 from '../images/female1.png'
 import female12 from '../images/female12.png'
 import Estimation from './Estimation'
 import { Link, useNavigate } from 'react-router-dom'
+import "./Fem.css"
 // import { useHistory } from 'react-router-dom';
 
 
@@ -118,7 +119,7 @@ const FeM = () => {
 
   return (
     <>
-    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-around", alignItems:"center"}}>
+    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly", alignItems:"center"}}>
 
       <form>
 
@@ -126,7 +127,7 @@ const FeM = () => {
 
           <label>Male or Female</label>
           <br />
-          <select onClick={setimgState} onChange={(e) => setsetmfe(e.target.value)}>
+          <select onClick={setimgState} className='select' onChange={(e) => setsetmfe(e.target.value)}>
             <option value="male">male</option>
             <option value="female">Female</option>
           </select>
@@ -205,13 +206,13 @@ const FeM = () => {
           }
 
         </div>
-        <br />{console.log(cal)}
-        <button type="button" onClick={calculations}><Link to="/price">Estimation</Link></button>
+        <br />
         <br />
         <br />
 
         <img src={img} />
 
+        <button type="button" onClick={calculations}>Estimation</button>  
       </form>
               </div>
     </>
