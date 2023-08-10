@@ -1,5 +1,4 @@
-import React from 'react'
-import "./Gallery.css"
+import React from 'react';
 import Image1 from "../images/image1.webp"
 import image1 from "../images/image1-2.webp"
 function Gallery() {
