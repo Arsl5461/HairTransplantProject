@@ -8,7 +8,7 @@ function Footer() {
         <div className="container py-5">
             <div className="d-flex justify-content-between align-items-center">
 <img src={Logo} width={"100px"} height={"100px"}/>
-<p>Follow us on Social Media:<i>Facebook</i> <i>Instagram</i> <i>Twitter</i></p>
+<p className='fs-3 text-light'>Follow us on Social Media:<i class="fa-brands fa-facebook mx-2"></i> <i class="fa-brands fa-instagram mx-2"></i> <i class="fa-brands fa-twitter mx-2"></i></p>
 </div>
 
 <hr className='text-light'/>

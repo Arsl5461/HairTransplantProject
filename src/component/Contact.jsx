@@ -33,7 +33,13 @@ function Contact() {
         body: JSON.stringify(handle),
       });
       alert("Message has been sent successfully.");
-      Navigate("/contact");
+      setHandle({
+        name:"",
+        email:"",
+        subject:"",
+        message:""
+      })
+      Navigate("/");
     }
   };
 
@@ -54,13 +60,16 @@ function Contact() {
           </p>
           <div className="row">
             {/*Grid column*/}
-            <div className="col-md-9 mb-md-0 mb-5">
+            <div className="col-md-12 mb-md-0 mb-5">
               <form id="contact-form" name="contact-form">
                 {/*Grid row*/}
                 <div className="row">
                   {/*Grid column*/}
                   <div className="col-md-6">
-                    <div className="md-form mb-0">
+                    <div className="md-form mb-4">
+                    <label htmlFor="name" className="">
+                        Your name
+                      </label>
                       <input
                         onChange={accountHandler}
                         type="text"
@@ -68,15 +77,16 @@ function Contact() {
                         value={handle.name}
                         className="form-control"
                       />
-                      <label htmlFor="name" className="">
-                        Your name
-                      </label>
+                   
                     </div>
                   </div>
                   {/*Grid column*/}
                   {/*Grid column*/}
                   <div className="col-md-6">
-                    <div className="md-form mb-0">
+                    <div className="md-form mb-4">
+                    <label htmlFor="email" className="">
+                        Your email
+                      </label>
                       <input
                         onChange={accountHandler}
                         type="text"
@@ -86,9 +96,7 @@ function Contact() {
                         value={handle.email}
                         className="form-control"
                       />
-                      <label htmlFor="email" className="">
-                        Your email
-                      </label>
+                     
                     </div>
                   </div>
                   {/*Grid column*/}
@@ -97,7 +105,10 @@ function Contact() {
                 {/*Grid row*/}
                 <div className="row">
                   <div className="col-md-12">
-                    <div className="md-form mb-0">
+                    <div className="md-form mb-4">
+                    <label htmlFor="subject" className="">
+                        Subject
+                      </label>
                       <input
                         onChange={accountHandler}
                         type="text"
@@ -106,9 +117,7 @@ function Contact() {
                         value={handle.subject}
                         className="form-control"
                       />
-                      <label htmlFor="subject" className="">
-                        Subject
-                      </label>
+                     
                     </div>
                   </div>
                 </div>
@@ -116,7 +125,9 @@ function Contact() {
                 {/*Grid row*/}
                 <div className="row">
                   {/*Grid column*/}
-                  <div className="col-md-12">
+                  <div className="col-md-12 mb-4">
+                  <label htmlFor="message">Your message</label>
+
                     <div className="md-form">
                       <textarea
                         onChange={accountHandler}
@@ -128,13 +139,12 @@ function Contact() {
                         className="form-control md-textarea"
                         defaultValue={""}
                       />
-                      <label htmlFor="message">Your message</label>
                     </div>
                   </div>
                 </div>
                 {/*Grid row*/}
               </form>
-              <div className="text-center text-md-left">
+              <div className="text-center fs-1">
                 <button className="btn btn-success" onClick={createUser}>
                   Send
                 </button>

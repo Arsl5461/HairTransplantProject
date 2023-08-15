@@ -1,15 +1,22 @@
 import React from 'react'
-
+import "./About.css"
 function About() {
   return (
-    <div>
-      **About Us - Hair Rebirth**
+      <div className="container">
+        <div className="row m-5">
+          <div className="col-lg-8">
+    <div className='fs-3'>About Us</div> 
+    <p className='fs-5'>Hair Rebirth Welcome to Hair Rebirth, the pinnacle of excellence in the realm of hair restoration and treatment.
+    </p>
+    <img src="https://city-clinics.co.uk/wp-content/uploads/2021/01/Header-about-us-1.jpg" width={"750px"}/>
 
-Welcome to Hair Rebirth, the pinnacle of excellence in the realm of hair restoration and treatment.
+    <div className="box mt-5">
+      <h1 className='mb-3'>World-class Expertise</h1>
+      <p>At Hair Rebirth, we believe that every strand tells a story, a sentiment that resonates deeply with our ethos. We understand the emotional toll that hair loss can take on individuals, and we are committed to rewriting those stories with a fresh start, renewed confidence, and the joy of rediscovery.
+      </p>
+    </div>
 
-At Hair Rebirth, we believe that every strand tells a story, a sentiment that resonates deeply with our ethos. We understand the emotional toll that hair loss can take on individuals, and we are committed to rewriting those stories with a fresh start, renewed confidence, and the joy of rediscovery.
 
-**World-class Expertise**
 
 Our journey began with a vision to revolutionize the world of hair care by bringing together the brightest minds in the field. Today, we proudly host an ensemble of highly qualified pharmacists, leading trichologists, and compassionate nurses. Each member of our team is handpicked and represents the pinnacle of expertise in hair loss solutions.
 
@@ -32,7 +39,13 @@ At Hair Rebirth, we don’t just restore hair; we renew self-esteem, reignite co
 ---
 
 Welcome to Hair Rebirth - where your new chapter begins.
-    </div>
+</div>
+<div className="col-lg-4">
+
+</div>
+</div>
+</div>
+  
   )
 }
 

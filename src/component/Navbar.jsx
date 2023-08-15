@@ -5,7 +5,7 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"#AC8A50"}}>
+      <nav class="navbar navbar-expand-lg navbar-light fs-4" style={{backgroundColor:"#AC8A50"}}>
   <div class="container-fluid">
     <Link to="/"><img src={Logo} height={"100px"} width={"100px"} /></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
