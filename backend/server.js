@@ -10,11 +10,14 @@ const port = 6100; // Change this to your desired port
 app.use(bodyParser.json());
 
 // MongoDB database configuration
-mongoose.connect("mongodb://localhost:27017/hairrebuild", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-},
-console.log("MongoDb connected Successfully!"));
+mongoose.connect(
+  "mongodb+srv://arsl:Arslanakmal786@cluster0.dwren.mongodb.net/hairrebuild",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  console.log("MongoDb connected Successfully!")
+);
 app.use(cors());
 
 app.use(
